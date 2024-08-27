@@ -1,11 +1,8 @@
 # Import the libraries
 from datetime import timedelta
-# The DAG object; we'll need this to instantiate a DAG
 from airflow.models import DAG
-# Operators; you need this to write tasks!
 from airflow.operators.python import PythonOperator
 
-# This makes scheduling easy
 from airflow.utils.dates import days_ago
 
 # Define the path for the input and output files
